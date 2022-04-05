@@ -1,0 +1,49 @@
+Baixar Arquivo -> Linux
+
+Extrair
+
+Renomear pasta para Arduino
+
+Abrir o terminal a partir da pasta 'download'
+
+Mudar de pasta: 		'sudo mv arduino /opt'
+
+Ir até a pasta onde foi transferida e abrir o terminal a partir dela
+
+Tornar Executável o arquivo: 	'sudo chmod 777 -R install.sh'
+
+Executar o arquivo: 		'sudo ./install.sh'
+
+Entrar com o 'https://dl.espressif.com/dl/package_esp32_index.json' em Arquivo -> Preferências -> 
+
+Em 'Ferramentas' -> 'Placa' -> Gerenciador de Placas escreva ESP32 e instale
+
+Inserir a Placa no seu USB.
+
+Em 'ferramentas' -> 'Porta' selecionar a porta que aparece pra vc.
+
+Mude a placa em 'Ferramentas' -> 'Placa' -> 'Gerenciador de Placas' para 'Node32s'
+
+Atualize em Ferramentas o Upload Speed para 115200
+
+E certifique-se que a frequência é de 80Mhs.
+
+Instale as duas bibliotecas - Arduino JSON e Firebase Master ESP32
+
+ em Sketch -> Biblioteca - > Adicionar arquivo ZIP -> Encontrar arquivo no Computador
+
+Abrir o terminal e Instalar o Python com:
+
+ 'sudo apt-get install python3'					
+
+ 'sudo apt install python'
+
+E o Serial do Python com:
+
+'sudo apt-get install python-serial python3-serial'
+
+Dar permissão a porta serial com: (No meu caso o caminho é /dev/ttyUSB0) Adapte a linha de código abaixo com a sua realidade
+
+'sudo chmod 666 /dev/ttyUSB0' (è provavel que você tenha que usar esse comando todas as vezes que iniciar o computador)
+
+Rode o arquivo com void setup e void loop
